@@ -29,7 +29,7 @@ req.write(data)
 req.end()
 
 app.get('/', function (req, res) {
-  res.send('Webhook - POC!');
+  //res.send('Webhook - POC!');
 });
 
 module.exports = app;
