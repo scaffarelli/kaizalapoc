@@ -29,7 +29,7 @@ req.write(data)
 req.end()
 
 app.get('/', function (req, res) {
-  //res.send('Webhook - Kaizala - POC!');
+  res.send(req.query.validationToken);
 });
 
 module.exports = app;
